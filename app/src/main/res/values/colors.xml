@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#fdfdfd</color>
+
+    <color name="negro_mas_claro">#373737</color>
+
+    <color name="separadores_tab">#0f3e50</color>
+    <color name="fondo_tab">#14526a</color>
+
+    <color name="blue">#67d5ff </color>
+    <color name="verde">#819e66</color>
+    <color name="verdeOscuro">#4fa700</color>
+    <color name="azul_claro">#227ea1</color>
+    <color name="azul">#2794be</color>
+    <color name="gris_claro_secciones_y_buscador">#8a8a8a</color>
+    <color name="gris_claro_degradado_menu_lateral">#706f6f</color>
+    <color name="gris_oscuro_degradado_menu_lateral">#3a3a3a</color>
+    <color name="gris_fondo_lateral">#565654</color>
+
+    <color name="gris_separador_menu_lateral">#3c3c3c</color>
+
+    <color name="naranja_seleccionar_item_preferences">#F8A948</color>
+
+    <color name="azul_oscuro_menu_lateral">#134b5e</color>
+    <color name="azul_claro_titulo_menu_lateral">#114e63</color>
+    <color name="azul_oscuro_titulo_menu_lateral">#185a6e</color>
+    <color name="color_botones_welcome">#F27474</color>
+    <color name="azul_barra_tutorial">#F27474</color>
+    <color name="background_tabs_notificaciones">#134b5e</color>
+
+    <color name="azul_pulsado_claro">#02455f</color>
+    <color name="azul_pulsado_oscuro">#F27474</color>
+
+    <color name="azul_aplicado_a_elementos_sublista_menu_lateral">#f3f3f3</color>
+    <color name="blanco_aplicado_a_lista_lateral">#f3f3f3</color>
+
+    <color name="gris_listado_notificaciones_vacio">#848484</color>
+
+    <color name="blueDark">#F27474</color>
+    <color name="blanco">#ffffff</color>
+    <color name="negro">#000000</color>
+    <color name="default_background_color">#E4E4E4</color>
+    <color name="title">#666666</color>
+    <color name="hint">#DDDDDD</color>
+    <color name="default_evernote_background">#313332</color>
+    <color name="evernote_title">#ffffff</color>
+    <color name="evernote_linebutton">#333534</color>
+    <color name="evernote_list_divider">#333534</color>
+    <color name="evernote_footer">#2c2c2c</color>
+    <color name="evernote_footer_text">#5b5b5c</color>
+    <color name="evernote_button_pressed">#9eb39b</color>
+    <color name="evernote_button_bkg">#464847</color>
+    <color name="gris_alert_dialog_button">#262526</color>
+    <color name="gris_claro_alert_dialog_button">#3f3e3f</color>
+    <color name="color_fondo_gris_encabezados_menu_lateral">#1c6b89</color>
+    <color name="color_hint_buscador">#F27474</color>
+
+    <!-- Colores landing -->
+    <color name="naranja_landing">#ff7800</color>
+    <color name="gris_claro_landing">#e6e6e6</color>
+    <color name="gris_oscuro_landing">#a6a6a6</color>
+    <color name="color_texto_corporativo_landing">#333534</color>
+    <color name="color_celda_landing_1">#ff8400</color>
+    <color name="color_celda_con_alpha_landing_1">#4Dff8400</color>
+    <color name="color_celda_landing_2">#e6e6e6</color>
+    <color name="color_celda_con_alpha_landing_2">#4De6e6e6</color>
+    <color name="color_celda_landing_3">#a6a6a6</color>
+    <color name="color_celda_con_alpha_landing_3">#4Da6a6a6</color>
+    <color name="color_texto_celda_landing_3">#000000</color>
+    <color name="color_texto_celda_impares_landing">#000000</color>
+
+    <!-- Colores login -->
+    <color name="gris_fondo_edittext_login">#d0d0d0</color>
+    <color name="gris_fuente_eddittext_login">#8b8b8b</color>
+    <color name="color_boton_entrar_login">#ff7800</color>
+    <color name="color_boton_registrate_login">#ff7800</color>
+    <color name="color_textos_login">#8b8b8b</color>
+    <color name="color_texto_entrar_login">#FFFFFF</color>
+
+    <!-- Colores locales cercanos -->
+    <color name="color1_pijama_listado_cercanos">#ececec</color>
+    <color name="color2_pijama_listado_cercanos">#f8f8f8</color>
+    <color name="color_textos_listado_cercanos">#4d606f</color>
+    <color name="gris_submenu_preferences">#D8D8D8</color>
+
+    <!-- Colores Listados notificaciones -->
+    <color name="gris_oscuro_fondo_iconos_tab_pager_notif">#646464</color>
+    <color name="gris_oscuro_fondo_boton_anadir_equipos_notif">#8b8b8b</color>
+    <color name="gris_claro_fuente_boton_anadir_equipos_notif">#f8f8f8</color>
+    <color name="negro_titulo_evento_notif">#373737</color>
+    <color name="gris_fecha_evento_notif">#8b8b8b</color>
+    <color name="gris_pijama_listado_notif">#ececec</color>
+    <color name="blanco_pijama_listado_notif">#f8f8f8</color>
+    <color name="gris_fondo_estadistica_notif">#d9d9d9</color>
+    <color name="gris_claro_fondo_estadistica_notif">#e0e0e0</color>
+    <color name="negro_titulo_competicion_notif">#373737</color>
+    <color name="blanco_divider_notif">#f8f8f8</color>
+    <color name="naranja_indicator_pager_notif">#ff7800</color>
+    <color name="gris_titulo_competicion">#D5D5D5</color>
+
+
+    <!-- Colores Suscripcioones -->
+    <color name="color_texto_migas_suscripciones">#b0b8c0</color>
+    <color name="color_fondo_migas_suscripciones">#f8f8f8</color>
+    <color name="color_linea_separadora_superior_suscripciones">#e9e9e9</color>
+    <color name="color_linea_separadora_inferior_suscripciones">#e9e9e9</color>
+    <color name="color1_fondo_estadistica_suscripciones">#e0e0e0</color>
+    <color name="color2_fondo_estadistica_suscripciones">#d9d9d9</color>
+    <color name="color_fondo_suscripciones">#eaeaea</color>
+
+    <!-- Colores Ajustes -->
+    <color name="negro_texto_ajustes">#373737</color>
+    <color name="gris_texto_secundario_ajustes">#6E6E6E</color>
+    <color name="float_transparent">#66000000</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="blue_btn_bg_color">#F27474</color>
+    <color name="blue_btn_bg_pressed_color">#F27474</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+
+    <!-- Colores Ajustes -->
+    <color name="color_listview_ajustes">#D8D8D8</color>
+    <color name="color_texto_ajustes">#394551</color>
+    <color name="color_texto_secundario_ajustes">#394551</color>
+
+    <!-- Colores login -->
+    <color name="color_boton_entrar_intro">#ff7800</color>
+
+    <!-- Colores Pantalla corporativa -->
+    <color name="color_titulos_pantalla_corp">#ff7800</color>
+
+    <!-- Colores Tutorial -->
+    <color name="color_separador_tutorial">#ff7800</color>
+    <color name="color_indicador_tutorial">#ff7800</color>
+    <color name="color_background_tutorial">#eaeaea</color>
+    <color name="color_fondo_tutorial">#ffffff</color>
+    <color name="color_fondo_diapositiva_tutorial">#ffffff</color>
+    <color name="color_titulo_diapositiva_tutorial">#000000</color>
+    <color name="color_texto_diapositiva_tutorial">#000000</color>
+    <color name="color_fondo_botones_tutorial">#ffffff</color>
+    <color name="color_texto_botones_tutorial">#000000</color>
+
+    <!-- Color Corporativo -->
+    <color name="color_corporativo">#ff7800</color>
+
+    <!-- Colores Aviso Login Unico -->
+    <color name="color_textos_aviso_login_unico">#ff7800</color>
+    <color name="color_fondo_titulo_superior_aviso_cambio_comunidad">#393939</color>
+
+    <!-- Colores Aviso Selección-->
+    <color name="color_textos_aviso_seleccion">#ff7800</color>
+
+    <!-- Colores Menu Lateral -->
+    <color name="color_onpress_menu_lateral_start">#FF8400</color>
+    <color name="color_onpress_menu_lateral_end">#FF8400</color>
+    <color name="color_secciones_menu_lateral">#222222</color>
+    <color name="color_fondo_seccion_buscador_menu_lateral">#393939</color>
+    <color name="color_end_fondo_gradiante_menu_lateral">#393939</color>
+    <color name="color_start_fondo_gradiante_menu_lateral">#393939</color>
+    <color name="color_texto_encabezados_menu_lateral">#555555</color>
+    <color name="color_texto_buscador_menu_lateral">#cecece</color>
+    <color name="color_fondo_buscador_menu_lateral">#4c4c4c</color>
+    <color name="color_separador_menu_lateral">#4c4c4c</color>
+
+    <!-- Colores Notificaciones -->
+    <color name="color_fondo_tabs_notificaciones">#f8f8f8</color>
+    <color name="color_separador_tabs_notificaciones">#676767</color>
+    <color name="color_indicador_notificaciones">#ff7800</color>
+    <color name="color_titulo_listado_vacio_notificaciones">#ff7800</color>
+    <color name="color_subtitulo_listado_vacio_notificaciones">#4d606f</color>
+    <color name="color_texto_titulo_tab">#676767</color>
+    <color name="color_linea_separadora_notificaciones">#e9e9e9</color>
+    <color name="color_fondo_listado_notificaciones">#eaeaea</color>
+    <color name="color_fondo_titulo_tabs">#f8f8f8</color>
+    <color name="color1_pijama_listado_notificaciones">#ececec</color>
+    <color name="color2_pijama_listado_notificaciones">#f8f8f8</color>
+    <color name="color_titulo_competicion_listado_notificaciones">#394551</color>
+    <color name="color_texto_titulo_competicion_notificaciones">#FFFFFF</color>
+    <color name="color_fecha_evento_listado_notificaciones">#ff8400</color>
+    <color name="color_titulo_evento_listado_notificaciones">#4d606f</color>
+    <color name="color_texto_ver_equipos_listado_notificaciones">#ffffff</color>
+
+    <!-- Lineas genericas listados -->
+    <color name="color_borde_fila_superior_listado">#ffffff</color>
+    <color name="color_borde_fila_inferior_listado">#d5d5d5</color>
+
+    <!-- Colores Main Activity -->
+    <color name="color_action_bar">#ffffff</color>
+    <color name="color_start_action_bar">#ffffff</color>
+    <color name="color_end_action_bar">#ffffff</color>
+    <color name="color_texto_lineas_boleto">#ffffff</color>
+    <color name="color_texto_usuario_action_bar">#000000</color>
+    <color name="color_texto_saldo_action_bar">#ff8400</color>
+
+    <!-- Colores pantalla de carga-->
+    <color name="color_spinner_cargando">#ff7800</color>
+
+    <!-- Colores pantalla intro-->
+    <color name="color_texto_entrar_intro">#ffffff</color>
+
+    <!-- Colores pantalla corporativa-->
+    <color name="color_texto_titulo_comunidad_corporativa">#333333</color>
+    <color name="color_texto_comunidad_corporativa">#B0B0B0</color>
+    <color name="color_host_comunidad_corporativa">#B0B0B0</color>
+    <color name="color_ver_apuestas_corporativa">#ff7800</color>
+    <color name="color_texto_selecciona_corporativa">#ffffff</color>
+    <color name="color_fondo_selecciona_corporativa">#333333</color>
+
+    <!-- Colores aviso selección-->
+    <color name="color_fondo_host_aviso_seleccion">#CDCDCD</color>
+    <color name="color_texto_host_aviso_seleccion">#535353</color>
+    <color name="color_texto_boton_cancelar_aviso_seleccion">#A0A0A0</color>
+    <color name="color_texto_boton_ir_aviso_seleccion">#FFFFFF</color>
+    <color name="color_aviso_seleccion_start_no_pressed">#ffb13c</color>
+    <color name="color_aviso_seleccion_end_no_pressed">#ff8400</color>
+    <color name="color_aviso_seleccion_start_pressed">#4Dffb13c</color>
+    <color name="color_aviso_seleccion_end_pressed">#4Dff8400</color>
+
+    <!-- Colores Sin conexión-->
+    <color name="color_texto_sin_conexion">#8b8b8b</color>
+
+    <!-- Colores iconos actionBar Main -->
+    <color name="color_texto_boleto_actionbar">#ff8400</color>
+    <color name="color_circulo_boleto_actionbar">#ff8400</color>
+
+    <!-- Color barra casino-->
+    <color name="color_barra_casino">#333333</color>
+
+    <!-- Color spinner cambio comunidad -->
+    <color name="color_spinner_cambio_comunidad">#8b8b8b</color>
+
+    <!-- Colores info saldos -->
+    <color name="color_saldos_celda_superior">#E6E6E6</color>
+    <color name="color_saldos_celda_inferior">#FFFFFF</color>
+    <color name="color_saldos_celda_pulsada">#848484</color>
+    <!-- Colores aviso seleccion -->
+
+
+    <!-- Color iconos bottom bar-->
+    <color name="color_iconos_bottom_bar">#000000</color>
+
+    <!-- Color scanner-->
+    <color name="color_scanner_background">#232323</color>
+    <color name="color_scanner_background_trans">#D9232323</color>
+    <color name="color_scanner_centrar">#393939</color>
+
+    <!-- Color bottom bar -->
+    <color name="color_bottom_copyright_back">#393939</color>
+    <color name="color_bottom_copyright_text">#A7A7A7</color>
+</resources>

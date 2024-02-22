@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/out"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5">
+
+            <ImageView
+                android:id="@+id/imageViewDefault"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_landing" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5">
+
+
+            <!-- Botones en un mosaico de 3x2 sin márgenes -->
+            <GridLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:columnCount="2"
+                android:rowCount="3">
+
+                <!-- Botón 1 -->
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="0.5"
+                    android:layout_columnWeight="1"
+                    android:backgroundTint="#E67E22"
+                    android:background="#E67E22"
+                    android:text="Sección 1" />
+
+                <!-- Botón 2 -->
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="0.5"
+                    android:layout_columnWeight="1"
+                    android:background="#3498DB"
+                    android:text="Sección 2" />
+
+                <!-- Botón 3 -->
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="0.5"
+                    android:layout_columnWeight="1"
+                    android:background="#2ECC71"
+                    android:text="Sección 3" />
+
+                <!-- Botón 4 -->
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="0.5"
+                    android:layout_columnWeight="1"
+                    android:background="#F1C40F"
+                    android:text="Sección 4" />
+
+                <!-- Botón 5 -->
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="0.5"
+                    android:layout_columnWeight="1"
+                    android:background="#9B59B6"
+                    android:text="Sección 5" />
+
+                <!-- Botón 6 -->
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="0.5"
+                    android:layout_columnWeight="1"
+                    android:background="#E74C3C"
+                    android:text="Sección 6" />
+            </GridLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
