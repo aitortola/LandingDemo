@@ -42,7 +42,6 @@ class LandingListItemAdapters(
             val button = holder.itemView.findViewById<Button>(R.id.button1)
             button.text = model.Titulo
             button.textSize = model.TamanoFuente.toFloat()
-            button.
 
 
         }
