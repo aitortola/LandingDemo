@@ -6,6 +6,7 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="codEmpty">1</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
@@ -46,4 +47,8 @@
     <string name="title_activity_landing">LandingActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="espera_por_favor">Espera por favor...</string>
+    <string name="please_click_back_again_to_exit">Por favor vuelva a pulsar para salir.</string>
+    <string name="please_wait">Espere...</string>
+    <string name="prueba">Prueba Tarjeta texto</string>
 </resources>

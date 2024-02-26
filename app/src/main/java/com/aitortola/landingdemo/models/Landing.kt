@@ -4,7 +4,7 @@ import android.os.Parcel
 import android.os.Parcelable
 
 data class Landing(
-    val Id: Int,
+    var Id: Int,
     val Orden: Int,
     val Titulo: String,
     val TituloLogin: String,
@@ -57,4 +57,7 @@ data class Landing(
             return arrayOfNulls(size)
         }
     }
+
+    // Constructor sin argumentos requerido por Firestore
+    constructor() : this(0, 0, "", "", "", "", "", "", "", 0, 0)
 }

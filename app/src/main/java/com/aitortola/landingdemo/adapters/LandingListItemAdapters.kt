@@ -2,49 +2,49 @@ package com.aitortola.landingdemo.adapters
 
 import android.content.Context
 import android.content.DialogInterface.OnClickListener
+import android.content.res.Configuration
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.aitortola.landingdemo.R
 import com.aitortola.landingdemo.models.Landing
-import com.bumptech.glide.Glide
 
 class LandingListItemAdapters(
     private val context: Context,
-    private val list:ArrayList<Landing>
-): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+    private val list: ArrayList<Landing>
+) : RecyclerView.Adapter<LandingListItemAdapters.MosaicViewHolder>() {
     private var onClickListener: OnClickListener? = null
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        return MyViewHolder(
-            LayoutInflater.from(context).inflate(
-                R.layout.activity_landing,
-                parent,
-                false
-            )
-        )
+    class MosaicViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val tvTitulo: TextView = itemView.findViewById(R.id.tvCard)
+
     }
 
-    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MosaicViewHolder {
+        val itemView = LayoutInflater.from(parent.context)
+            .inflate(R.layout.activity_landing, parent, false)
+        return MosaicViewHolder(itemView)
+    }
+
+    override fun onBindViewHolder(holder: MosaicViewHolder, position: Int) {
         val model = list[position]
 
-        if (holder is MyViewHolder) {
+        val tvTitulo: TextView = holder.itemView.findViewById(R.id.tvCard)
 
-            Glide
-                .with(context)
-                .load(model.Imagen)
-                .centerCrop()
-                .placeholder(R.drawable.landing_celda_casino)
-                .into(holder.itemView.findViewById(R.id.button1))
+        tvTitulo.text = model.Titulo
 
-            val button = holder.itemView.findViewById<Button>(R.id.button1)
-            button.text = model.Titulo
-            button.textSize = model.TamanoFuente.toFloat()
-
+        holder.itemView.setOnClickListener {
+            if (onClickListener != null) {
+                onClickListener!!.onClick(position)
+            }
 
         }
+    }
+
+    private fun esTablet(context: Context): Boolean {
+        return context.resources.configuration.screenLayout >= Configuration.SCREENLAYOUT_SIZE_LARGE && Configuration.SCREENLAYOUT_SIZE_MASK >= Configuration.SCREENLAYOUT_SIZE_LARGE
     }
 
     override fun getItemCount(): Int {
