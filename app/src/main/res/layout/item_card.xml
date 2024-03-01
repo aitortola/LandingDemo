@@ -7,13 +7,17 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Aquí puedes agregar TextViews u otros elementos según tus necesidades -->
-    <TextView
-        android:id="@+id/tvCard"
-        android:layout_width="wrap_content"
+    <!-- Aquí colocamos el GridLayout para los botones -->
+    <GridLayout
+        android:id="@+id/mosaicGrid"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Titulo"/>
+        android:columnCount="2"
+        android:rowCount="3"
+        android:layout_gravity="center">
 
-    <!-- Agrega más elementos según tus necesidades -->
+        <!-- Aquí se llenarán dinámicamente los elementos del mosaico -->
+
+    </GridLayout>
 
 </LinearLayout>

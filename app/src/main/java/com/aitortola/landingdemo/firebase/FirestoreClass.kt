@@ -10,7 +10,9 @@ import com.google.firebase.firestore.Query
 class FirestoreClass {
     private val mFireStore = FirebaseFirestore.getInstance()
     fun getLandingList(activity: LandingActivity) {
-        mFireStore.collection("Landing/1/Tarjeta")
+        mFireStore.collection("Landing")
+            .document("1")
+            .collection("Tarjeta")
             .orderBy(FieldPath.documentId())
             .get()
             .addOnSuccessListener { document ->

@@ -2,7 +2,10 @@ package com.aitortola.landingdemo.activities
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.aitortola.landingdemo.R
 import com.aitortola.landingdemo.adapters.LandingListItemAdapters
 import com.aitortola.landingdemo.databinding.ActivityLandingBinding
@@ -27,24 +30,15 @@ class LandingActivity : BaseActivity() {
         FirestoreClass().getLandingList(this)
     }
 
-    override fun onPostCreate(savedInstanceState: Bundle?) {
-        super.onPostCreate(savedInstanceState)
-
-        // Trigger the initial hide() shortly after the activity has been
-        // created, to briefly hint to the user that UI controls
-        // are available.
-    }
-
     fun setupLandingList(list: ArrayList<Landing>) {
         mLandingList = list
         hideProgressDialog()
 
-        val rvLandingList = binding.recyclerView
-        rvLandingList.layoutManager = LinearLayoutManager(this)
-        rvLandingList.setHasFixedSize(true)
+        val gridLayout: RecyclerView = findViewById<RecyclerView>(R.id.mosaicGrid)
 
-        val adapter = LandingListItemAdapters(this@LandingActivity, mLandingList)
-        rvLandingList.adapter = adapter
+        val landingListAdapter = LandingListItemAdapters(this, mLandingList)
+        gridLayout.adapter = landingListAdapter
+        gridLayout.layoutManager = LinearLayoutManager(this)
     }
 
 }

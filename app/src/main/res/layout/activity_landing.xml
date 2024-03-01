@@ -28,24 +28,25 @@
 
         </RelativeLayout>
 
-        <GridLayout
-            android:id="@+id/mosaicGrid"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:columnCount="2"
-            android:columnOrderPreserved="false"
-            android:rowCount="3">
-
-            <!-- Aquí se llenarán dinámicamente los elementos del mosaico -->
+        <LinearLayout
+            android:id="@+id/layoutMosaic"
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1.5"
+            android:orientation="vertical" >
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerView"
+                android:id="@+id/mosaicGrid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
-        </GridLayout>
+                android:layout_margin="8dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                />
 
+                <!-- Aquí se llenarán dinámicamente los elementos del mosaico -->
+
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>
