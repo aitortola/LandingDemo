@@ -34,11 +34,12 @@ class LandingActivity : BaseActivity() {
         mLandingList = list
         hideProgressDialog()
 
-        val gridLayout: RecyclerView = findViewById<RecyclerView>(R.id.mosaicGrid)
-
-        val landingListAdapter = LandingListItemAdapters(this, mLandingList)
-        gridLayout.adapter = landingListAdapter
+        val gridLayout: RecyclerView = binding.recyclerView
         gridLayout.layoutManager = LinearLayoutManager(this)
+        gridLayout.setHasFixedSize(true)
+
+        val adapter = LandingListItemAdapters(this@LandingActivity, mLandingList)
+        gridLayout.adapter = adapter
     }
 
 }

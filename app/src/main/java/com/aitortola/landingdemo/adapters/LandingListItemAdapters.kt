@@ -16,7 +16,7 @@ class LandingListItemAdapters(private val context: Context, private val landingL
     RecyclerView.Adapter<LandingListItemAdapters.ViewHolder>() {
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val gridLayout: GridLayout = itemView.findViewById(R.id.gridLayout)
+        val gridLayout: GridLayout = itemView.findViewById(R.id.mosaicGrid)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -29,12 +29,21 @@ class LandingListItemAdapters(private val context: Context, private val landingL
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val currentItem = landingList[position]
 
+        holder.gridLayout.removeAllViews()
         // Configurar el contenido del ViewHolder según el modelo Landing
-        holder.btnCard.text = currentItem.Titulo
-        holder.btnCard.setTextSize(currentItem.TamanoFuente.toFloat())
+        for (i in 1..6) {
+            val button = Button(context)
+            button.layoutParams = GridLayout.LayoutParams().apply {
+                width = GridLayout.LayoutParams.WRAP_CONTENT
+                height = GridLayout.LayoutParams.WRAP_CONTENT
+                columnSpec = GridLayout.spec(GridLayout.UNDEFINED, 1f)
+                rowSpec = GridLayout.spec(GridLayout.UNDEFINED, 1f)
+                setMargins(8,8,8,8)
+            }
+            button.text = "${currentItem.Titulo}"
+            holder.gridLayout.addView(button)
+        }
 
-        holder.txtCard.text = currentItem.Titulo
-        holder.txtCard.textSize = currentItem.TamanoFuente.toFloat()
         // Puedes configurar otros elementos según sea necesario
     }
 
