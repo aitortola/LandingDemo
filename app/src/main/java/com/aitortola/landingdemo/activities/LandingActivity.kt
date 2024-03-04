@@ -3,7 +3,9 @@ package com.aitortola.landingdemo.activities
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.widget.GridLayout
 import android.widget.TextView
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.aitortola.landingdemo.R
@@ -34,12 +36,13 @@ class LandingActivity : BaseActivity() {
         mLandingList = list
         hideProgressDialog()
 
-        val gridLayout: RecyclerView = binding.recyclerView
-        gridLayout.layoutManager = LinearLayoutManager(this)
-        gridLayout.setHasFixedSize(true)
+        val recyclerView = binding.rvLandingList
+        recyclerView.layoutManager = GridLayoutManager(this, 2)
 
         val adapter = LandingListItemAdapters(this@LandingActivity, mLandingList)
-        gridLayout.adapter = adapter
+        recyclerView.adapter = adapter
     }
+
+
 
 }
