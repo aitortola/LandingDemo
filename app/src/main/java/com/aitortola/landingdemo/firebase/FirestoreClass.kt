@@ -5,7 +5,6 @@ import com.aitortola.landingdemo.activities.LandingActivity
 import com.aitortola.landingdemo.models.Landing
 import com.google.firebase.firestore.FieldPath
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.Query
 
 class FirestoreClass {
     private val mFireStore = FirebaseFirestore.getInstance()
